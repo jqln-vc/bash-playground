@@ -1,7 +1,5 @@
 #!/bin/bash
 
-chmod +x s2_ex7.sh || echo "Failed to set permissions"
-
 if [[ -n "${1}" && -d "${1}" ]]; then
     echo "${1} is a directory."
 elif [[ -n "${1}" && -f "${1}" ]]; then

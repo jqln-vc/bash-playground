@@ -1,7 +1,5 @@
 #!/bin/bash
 
-chmod +x s2_ex4.sh || echo "Failed to set permissions"
-
 FILE="/etc/shadow"
 
 if [[ -e "$FILE" && -w "$FILE" ]]; then

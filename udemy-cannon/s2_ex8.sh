@@ -1,7 +1,5 @@
 #!/bin/bash
 
-chmod +x s2_ex8.sh || echo "Failed to set permissions"
-
 for file in ${@}
 do
     if [[ -n "${file}" && -d "${file}" ]]; then

@@ -1,7 +1,5 @@
 #!/bin/bash
 
-chmod +x s2_ex6.sh || echo "Failed to set permissions"
-
 read -p "Enter file or directory name: " FILE_PATH
 
 if [[ -n "${FILE_PATH}" && -d "${FILE_PATH}" ]]; then

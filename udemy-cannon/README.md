@@ -34,3 +34,27 @@ Modify the previous script so that it accepts the file or directory name as an a
 ### Exercise 8
 Modify the previous script to accept an unlimited number of files and directories as arguments.
 * Hint: You'll want to use a special variable.
+
+## Section 3: Exit Statuses and Return Codes
+### Exercise 1
+Write a shell script that displays "This script will exit with a 0 exit status." Be sure that the script does indeed exit with a 0 exit status.
+
+### Exercise 2
+Write a shell script that accepts a file or directory name as an argument. Have the script report if it is a regular file, a directory, or other type of file. If it is a regular file, exit with a 0 exit status. If it is a directory, exit with a 1 exit status. If it is some other type of file, exit with a 2 exit status.
+
+### Exercise 3
+Write a script that executes the command `cat /etc/shadow`. If the command returns a 0 exit status report "Command succeeded" and exit with a 0 exit status. If the command returns a non­zero exit status report "Command failed" and exit with a 1 exit status.
+
+## Section 4: Functions
+### Exercise 1
+Write a shell script that consists of a function that display the number of files in the present working directory. Name this function `file_count` and call it in your script. If you use a variable in your function, remember to make it a local variable.
+* Hint: The **wc** utility is used to count the number of lines, words, and bytes.
+
+### Exercise 2
+Modify the script from the previous exercise. Make the `file_count` function accept a directory as an argument. Next have the function display the name of the directory followed by a colon. Finally, display the number of files to the screen on the next line. Call the function three times. First, on the `/etc` directory, next on the `/var` directory and finally on the `/usr/bin` directory.  
+
+```bash
+    # Example output:
+    /etc:
+        85
+```
