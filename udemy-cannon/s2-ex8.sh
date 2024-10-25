@@ -9,7 +9,7 @@ do
     elif [[ -z "${file}" ]]; then
         echo "You didn't enter a file or directory :C"
     else
-        echo "${file} is neither a file or directory, I wonder what that is...."
+        echo "${file} is neither a file nor a directory, I wonder what that is...."
     fi
 
     ls -l ${file}
